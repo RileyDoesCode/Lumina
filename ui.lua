@@ -4132,7 +4132,7 @@ local function unc()
   loadstring(game:HttpGet("https://github.com/unified-naming-convention/NamingStandard/blob/main/UNCCheckEnv.lua?raw=true"))()
 end
 local function reload()
- loadstring(game:HttpGet(""))()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/RileyDoesCode/Lumina/refs/heads/main/ui.lua"))()
 end
 local function getthreadidentity()
    return 3 
