@@ -2062,6 +2062,7 @@ blue.Text=''
 Instance.new('UICorner',blue).CornerRadius=UDim.new(0.2)
 
 local theme = 'light'
+switchtheme()
 
 --[[Universal Theme Changer Script By @papi.wf]]
 local function switchtheme()
