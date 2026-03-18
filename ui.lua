@@ -2061,8 +2061,7 @@ blue.BackgroundColor3=o(0,0.2,0.9)
 blue.Text=''
 Instance.new('UICorner',blue).CornerRadius=UDim.new(0.2)
 
-local theme = 'light'
-switchtheme()
+local theme = "light"
 
 --[[Universal Theme Changer Script By @papi.wf]]
 local function switchtheme()
