@@ -1,3 +1,33 @@
+--init
+getgenv()._PULL_INT();
+
+local dtc = {
+    --// Script Execution
+    pushautoexec = clonefunction(Detectedly.pushautoexec),
+    runcode = clonefunction(Detectedly.runcode),
+	
+    --// Utilities
+    toast = clonefunction(Detectedly.toast),
+    open_url = clonefunction(Detectedly.open_url),
+    get_blocked = clonefunction(Detectedly.get_blocked)
+} 
+
+--// File System
+local readfile = clonefunction(Detectedly.readfile)
+local writefile = clonefunction(Detectedly.writefile)
+local appendfile = clonefunction(Detectedly.appendfile)
+local isfile = clonefunction(Detectedly.isfile)
+local delfile = clonefunction(Detectedly.delfile)
+local listfiles = clonefunction(Detectedly.listfiles)
+local makefolder = clonefunction(Detectedly.makedir)
+local isfolder = clonefunction(Detectedly.isfolder)
+local delfolder = clonefunction(Detectedly.deldir)
+
+Detectedly = nil;
+
+dtc.pushautoexec();
+
+--func
 repeat
 	task.wait(1)
 until game:IsLoaded();
@@ -63,6 +93,7 @@ local function GLYX_SAFE_REQUEST(data)
     }
 end
 
+--ui
 if game.CoreGui:FindFirstChild('LuminaGui') then
 	game.CoreGui.LuminaGui:Destroy()
 end
